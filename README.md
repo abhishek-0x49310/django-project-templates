@@ -3,6 +3,10 @@
 ```bash
 django-admin startproject myproject --template=https://codeload.github.com/abhishek-0x49310/django-project-templates/zip/refs/heads/project-template-minimal-with-admin
 ```
+### Now cd to project_name and create your python virtual environment.
+```
+python -m venv venv_name
+```
 
 ## How to create an app ?
 
