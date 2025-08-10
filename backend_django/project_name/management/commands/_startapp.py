@@ -23,27 +23,26 @@ class Command(BaseCommand):
         
         # Determine the destination directory for the new app.
         # This assumes your project structure is 'myproject/project_name/apps/'
-        project_name_dir = settings.BASE_DIR / '{{ project_name }}'
-        apps_dir = project_name_dir / 'apps'
+        #project_name_dir = settings.BASE_DIR / '{{ project_name }}'
+        #apps_dir = project_name_dir / 'apps'
         
         # Ensure the 'apps' directory exists
-        apps_dir.mkdir(parents=True, exist_ok=True)
-        (apps_dir / '__init__.py').touch()
+        #apps_dir.mkdir(parents=True, exist_ok=True)
+        #(apps_dir / '__init__.py').touch()
         
-        destination_path = apps_dir / app_name
+        #destination_path = apps_dir / app_name
         
-        if destination_path.exists():
-            raise CommandError(f"App '{app_name}' already exists at '{destination_path}'.")
+        #if destination_path.exists():
+            #raise CommandError(f"App '{app_name}' already exists at '{destination_path}'.")
 
-        self.stdout.write(f"Creating app '{app_name}' from template...")
+        #self.stdout.write(f"Creating app '{app_name}' from template...")
         
         
         try:
             call_command(
                 'startapp',
                 app_name,
-                f"--template={template_url}",
-                target=destination_path
+                f"--template={template_url}"
             )
         except Exception as e:
             raise CommandError(f"Error while creating app: {e}")
