@@ -13,7 +13,7 @@ class Command(BaseCommand):
             '--template-url',
             type=str,
             
-            default='https://github.com/YOUR_GITHUB_USERNAME/YOUR_REPO_NAME/archive/refs/heads/main.zip',
+            default='https://codeload.github.com/abhishek-0x49310/django-project-templates/zip/refs/heads/app-template-rest-framework',
             help='URL to the GitHub .zip archive of your template repository.'
         )
 
