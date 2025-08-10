@@ -10,7 +10,7 @@ class Command(BaseCommand):
 
     def handle(self, *args, **options):
         app_name = options['app_name']
-        template_url = 'https://codeload.github.com/abhishek-0x49310/django-project-templates/zip/refs/heads/app-template-rest-framework'
+        template_url = 'https://codeload.github.com/abhishek-0x49310/django-project-templates/zip/refs/heads/app-template-no-admin'
         
         try:
             call_command(
